@@ -27,20 +27,26 @@ class GoodsList {
         }
         else {
             this.#goods = [];
-        };
-        // this.filter =((good) => good.name.match(/`${filterName}`/g));
-        this.filter =/`${filterName}`/g;
+        }
+        this.filter = new RegExp(`${filterName}`, 'g');
         this.sortPrice = sortPrice;
         // признак направления сортировки по полю Price (true - по возрастанию, false - по убыванию)
         this.sortDir = sortDir;
     }
 
     get list(){
-        this.availableGoods = this.#goods.filter((good) => good.available == true);
-        this.filteredGoods = this.availableGoods.filter(this.filter.test(good.name));
-        sortPrice = this.sortPrice;
-        sortDir = this.sortDir
-        this.sortedGoods = this.filteredGoods.sort((sortPrice, sortDir) => sortPrice-sortDir)
+        // get only available items
+        this.sortedGoods = this.#goods.filter((good) => good.available == true);
+        // get items whick name contains certain word
+        this.sortedGoods = this.sortedGoods.filter(((good)=> this.filter.test(good.name)));
+        if (this.sortPrice){
+            if (this.sortDir){
+                this.sortedGoods = this.sortedGoods.sort((a,b)=> a.price-b.price);
+            }
+            else {
+                this.sortedGoods = this.sortedGoods.sort((a,b)=> b.price-a.price);
+            }
+        }
         return this.sortedGoods;
     }
 
@@ -100,7 +106,7 @@ class Basket {
     }
 
     add(good, amount) {
-        itemPosition = this.goods.findIndex(item => goods.id == good.id);
+        itemPosition = this.goods.findIndex(item => item.id == good.id);
         if (itemPosition === -1) {
             this.goods.push(good);
             this.goods[this.goods.length-1].amount = amount;
@@ -111,7 +117,7 @@ class Basket {
     }
     
     remove(good, amount) {
-        itemPosition = this.goods.findIndex(item => goods.id == good.id);
+        itemPosition = this.goods.findIndex(item => item.id == good.id);
         if (itemPosition === -1) {
         }
         else {
@@ -136,15 +142,14 @@ function main(){
     items = []
     for (i = 1; i<=5; i++) { 
         items.push(new Good(i, `Item ${i}`, `Description of item ${i}`, [i * 20, i * 10], i * 100, true)); 
-    };
-    // console.log(items);
-    goodlist = new GoodsList(items, 'Item', true,true); 
-    // console.log(goodlist.list()); //good is not defined
+    }
+    // get items with name that contains Item 1 sort them by price increase
+    goodlist = new GoodsList(items, 'Item 1', true, true); 
+    console.log(goodlist.list);
     basketGood = [];
     for (i = 0; i<=4; i++) { 
         basketGood.push(new BasketGood(items[i], i)); 
-    };
-    // console.log(basketGood);
+    }
     basket = new Basket(basketGood);
     console.log(`total amount of items = ${basket.totalAmount}`);
     console.log(`total price of basket = ${basket.totalPrice}`);
