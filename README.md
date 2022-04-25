@@ -9,3 +9,7 @@ Base projects that helps to learn JS
     - **class GoodsList** for storing catalog of products with sort and filter properties.
     - **class BasketGood** for storing basket items with defined amount.
     - **class Basket** for storing data about basket. You can add, remove items from it or clear the basket.
+5. [Closure](https://github.com/SamayaA/JavaScript_basics/blob/master/password_check.js).
+6. [Guessing number with readline module](https://github.com/SamayaA/JavaScript_basics/blob/master/guess_number.js).
+7. [Guessing number with async/await](https://github.com/SamayaA/JavaScript_basics/blob/master/guess_number_async.js).
+
