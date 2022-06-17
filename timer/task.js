@@ -10,10 +10,11 @@ function timerSet(value) {
         timer.textContent = timer.textContent - 1;
     }
     else {
-        alert("You win");
+        alert("Вы победили в конкурсе");
     }
 }
 
+// countdown
 while (timer.textContent > 0){
     delayTime(timer.textContent);
     console.log(timer.textContent);
