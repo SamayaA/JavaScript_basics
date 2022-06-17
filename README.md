@@ -12,4 +12,6 @@ Base projects that helps to learn JS
 5. [Closure](https://github.com/SamayaA/JavaScript_basics/blob/master/password_check.js).
 6. [Guessing number with readline module](https://github.com/SamayaA/JavaScript_basics/blob/master/guess_number.js).
 7. [Guessing number with async/await](https://github.com/SamayaA/JavaScript_basics/blob/master/guess_number_async.js).
-
+8. [Timer](https://github.com/SamayaA/JavaScript_basics/blob/master/timer/).
+9. [Click counter and clicker speed](https://github.com/SamayaA/JavaScript_basics/blob/master/onclick/).
+10. [Game "Kill mole"](https://github.com/SamayaA/JavaScript_basics/blob/master/game_kill_moles/).
