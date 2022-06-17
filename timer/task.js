@@ -1,23 +1,14 @@
 
-const timer = document.getElementById( 'timer' );
-
-function delayTime(time){
-    setTimeout(timerSet(time), 1000);
-}
-
-function timerSet(value) {
-    if (value > 0){
+countDown = setInterval(() => {
+    let timer = document.getElementById( 'timer' );
+    if (timer.innerHTML > 0){
         timer.textContent = timer.textContent - 1;
+        console.log(timer.textContent);
     }
     else {
+        clearInterval(countDown);
         alert("Вы победили в конкурсе");
     }
-}
-
-// countdown
-while (timer.textContent > 0){
-    delayTime(timer.textContent);
-    console.log(timer.textContent);
-}
+}, 1000)
     
 
