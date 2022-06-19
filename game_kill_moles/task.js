@@ -10,7 +10,7 @@ function hasMole(hole){
         }
     }
     else {
-        lost.innerHTML = parseInt(dead.innerHTML) + 1;
+        lost.innerHTML = parseInt(lost.innerHTML) + 1;
         // check for lose
         if (lost.innerHTML == 5){
             alert("Вы проиграли!")
@@ -18,6 +18,6 @@ function hasMole(hole){
     }
 } 
 
-for (i=1; i<=9; i++){
+for (i = 1; i <= 9; i++){
     document.getElementById(`hole${i}`).onclick = hasMole(document.getElementById(`hole${i}`));
 }
