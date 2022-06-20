@@ -15,3 +15,5 @@ Base projects that helps to learn JS
 8. [Timer](https://github.com/SamayaA/JavaScript_basics/blob/master/timer/).
 9. [Click counter and clicker speed](https://github.com/SamayaA/JavaScript_basics/blob/master/onclick/).
 10. [Game "Kill mole"](https://github.com/SamayaA/JavaScript_basics/blob/master/game_kill_moles/).
+11. [Drop down Navigation Menu](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_menu/).  
+	Implementation of a two-level navigation menu. When you click on an item, a list should pop up.
