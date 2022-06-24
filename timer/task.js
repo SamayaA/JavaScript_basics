@@ -1,9 +1,8 @@
-
-countDown = setInterval(() => {
-    let timer = document.getElementById( 'timer' );
+// set timer
+const countDown = setInterval(() => {
+    const timer = document.getElementById( 'timer' );
     if (timer.innerHTML > 0){
         timer.textContent = timer.textContent - 1;
-        console.log(timer.textContent);
     }
     else {
         clearInterval(countDown);
