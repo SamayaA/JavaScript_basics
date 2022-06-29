@@ -19,4 +19,5 @@ Base projects that helps to learn JS
 11. [Drop down Navigation Menu](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_menu/).  
 	Implementation of a two-level navigation menu. When you click on an item, a list should pop up.  
 12. [Slider of images](https://github.com/SamayaA/JavaScript_basics/blob/master/slider_swiper/).
-	Swipe images bi clicking on previous and next signs or clicking on the dots.
+	Swipe images bi clicking on previous and next signs or clicking on the dots.  
+13.  [EventListener](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_list/).
