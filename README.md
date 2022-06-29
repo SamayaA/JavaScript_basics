@@ -20,4 +20,6 @@ Base projects that helps to learn JS
 	Implementation of a two-level navigation menu. When you click on an item, a list should pop up.  
 12. [Slider of images](https://github.com/SamayaA/JavaScript_basics/blob/master/slider_swiper/).
 	Swipe images bi clicking on previous and next signs or clicking on the dots.  
-13.  [EventListener](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_list/).
+13.  [EventListener](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_list/).  
+14. [Solo on keyboard game](https://github.com/SamayaA/JavaScript_basics/blob/master/solo_on_keyboard/).  
+	пользователь вводит слово по буквам с клавиатуры. В случайное время появляется фраза. Если игрок вводит не так слово, ему засчитываeтся поражение. После 3 поражений игра заканчивается. Игрок побеждает после 10 побед.
