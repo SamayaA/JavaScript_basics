@@ -23,3 +23,4 @@ Base projects that helps to learn JS
 13.  [EventListener](https://github.com/SamayaA/JavaScript_basics/blob/master/drop_down_list/).  
 14. [Solo on keyboard game](https://github.com/SamayaA/JavaScript_basics/blob/master/solo_on_keyboard/).  
 	пользователь вводит слово по буквам с клавиатуры. В случайное время появляется фраза. Если игрок вводит не так слово, ему засчитываeтся поражение. После 3 поражений игра заканчивается. Игрок побеждает после 10 побед.
+15. [Switch tabs and displayed content by clicking on navigation menu](https://github.com/SamayaA/JavaScript_basics/blob/master/switch_tabs/).
