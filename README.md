@@ -26,3 +26,6 @@ Base projects that helps to learn JS
 15. [Switch tabs and displayed content by clicking on navigation menu](https://github.com/SamayaA/JavaScript_basics/blob/master/switch_tabs/).  
 16. [Blocks reveal](https://github.com/SamayaA/JavaScript_basics/blob/master/reveal/).  
 	Blocks appear at the moment when the scroll reaches them.  
+17. [Text ad rotator](https://github.com/SamayaA/JavaScript_basics/blob/master/ads/).  
+
+
