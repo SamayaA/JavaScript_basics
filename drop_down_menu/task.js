@@ -10,21 +10,19 @@ function closeDropDownMenu(){
     });
 }
 
-function displayDropDownMenu(position) {
-    let menuPosition = position.closest(".menu__item");
+function displayDropDownMenu(event) {
+    let menuPosition =event.target.closest(".menu__item");
     let element = menuPosition.querySelector("ul.menu, ul.menu_sub");
-
-    if (!(element.classList.contains("menu_active"))) {
-        element.classList.add("menu_active");
+    if (element != null){
+        element.classList.toggle("menu_active");
     }
 }
 
 menuLink.forEach((element) => {
-    element.onclick = () => {
+    element.onclick = (event) => {
         closeDropDownMenu();
-        displayDropDownMenu(element);
+        displayDropDownMenu(event);
         // return false to EventListener to prevent following a link
         return false
-
     }
 })
