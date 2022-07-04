@@ -12,6 +12,7 @@ function list() {
 
 // change value of dropDown 
 function changeValue(evt) {
+    evt.preventDefault();
     value.innerHTML = evt.target.textContent;
     list();
     return false;
