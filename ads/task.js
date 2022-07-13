@@ -1,8 +1,6 @@
 const rotators = Array.from(document.querySelectorAll(".rotator"));
 function makeRotators() {
-    rotators.forEach((element) => {
-        setInterval(() => changeAd(element), 1000);
-    })
+    setInterval(() => {rotators.forEach((element) =>{changeAd(element)})}, 1000);
 }
 
 function changeAd(rotator) {
