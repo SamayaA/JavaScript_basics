@@ -1,27 +1,32 @@
-const menuLink = Array.from(document.getElementsByClassName("menu__link"));
+const subMenu = Array.from(document.getElementsByClassName("menu_sub"))
+const menuLink = [];
+subMenu.forEach((element) => {
+    menuLink.push(element.closest(".menu__item").querySelector(".menu__link"));
+});
 
 function closeDropDownMenu(){
-    let activeMenu = Array.from(document.querySelectorAll("ul.menu, ul.menu_sub, ul.menu_active"));
+    let activeMenu = document.querySelector("ul.menu_active");
     // close all active Drop down menu
-    activeMenu.forEach((element) => {
-        if (element.classList.contains("menu_active")){
-            element.classList.remove("menu_active")
-        }
-    });
+    if (activeMenu !== null){
+        activeMenu.classList.remove("menu_active")
+    };
 }
 
-function displayDropDownMenu(event) {
-    let menuPosition =event.target.closest(".menu__item");
-    let element = menuPosition.querySelector("ul.menu, ul.menu_sub");
-    if (element != null){
-        element.classList.toggle("menu_active");
+function displayDropDownMenu(menu) {
+    if (menu != null){
+        menu.classList.toggle("menu_active");
     }
 }
 
 menuLink.forEach((element) => {
     element.onclick = (event) => {
-        closeDropDownMenu();
-        displayDropDownMenu(event);
+        let menu = event.target.closest(".menu__item").querySelector("ul.menu_sub");
+        if ((menu !== null) & menu.classList.contains("menu_active")){
+            closeDropDownMenu();
+        } else {
+            closeDropDownMenu();
+            displayDropDownMenu(menu);
+        }
         // return false to EventListener to prevent following a link
         return false
     }
