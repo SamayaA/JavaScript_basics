@@ -32,6 +32,8 @@ Base projects that helps to learn JS
 19. [Chat](https://github.com/SamayaA/JavaScript_basics/blob/master/chat/).
 20. [Nested input checkbox](https://github.com/SamayaA/JavaScript_basics/blob/master/interests/).  
 21. [Autocomplete search](https://github.com/SamayaA/JavaScript_basics/blob/master/search_autocomplete/).  
-22. [Show tooltip on click](https://github.com/SamayaA/JavaScript_basics/blob/master/tooltip/).
+22. [Show tooltip on click](https://github.com/SamayaA/JavaScript_basics/blob/master/tooltip/).  
+23. [ToDo website with using localStorage](https://github.com/SamayaA/JavaScript_basics/blob/master/todo/).  
+	You can add tasks by pressing "Enter" key in input or by clicking on button. Delete task by clicking on X.  
 
 
