@@ -29,7 +29,9 @@ Base projects that helps to learn JS
 17. [Text ad rotator](https://github.com/SamayaA/JavaScript_basics/blob/master/ads/).  
 18. [Book reader](https://github.com/SamayaA/JavaScript_basics/blob/master/book_reader/).  
 	Change font of text.  
-19. [Nested input checkbox](https://github.com/SamayaA/JavaScript_basics/blob/master/interests/).  
-20. [Autocomplete search](https://github.com/SamayaA/JavaScript_basics/blob/master/search_autocomplete/).  
+19. [Chat](https://github.com/SamayaA/JavaScript_basics/blob/master/chat/).
+20. [Nested input checkbox](https://github.com/SamayaA/JavaScript_basics/blob/master/interests/).  
+21. [Autocomplete search](https://github.com/SamayaA/JavaScript_basics/blob/master/search_autocomplete/).  
+22. [Show tooltip on click](https://github.com/SamayaA/JavaScript_basics/blob/master/tooltip/).
 
 
