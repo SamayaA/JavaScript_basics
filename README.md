@@ -35,5 +35,5 @@ Base projects that helps to learn JS
 22. [Show tooltip on click](https://github.com/SamayaA/JavaScript_basics/blob/master/tooltip/).  
 23. [ToDo website with using localStorage](https://github.com/SamayaA/JavaScript_basics/blob/master/todo/).  
 	You can add tasks by pressing "Enter" key in input or by clicking on button. Delete task by clicking on X.  
-
+24. [Add products to shoping cart](https://github.com/SamayaA/JavaScript_basics/blob/master/cart/).  
 
