@@ -11,7 +11,6 @@ removeTasks.forEach((element)=>{
         element.addEventListener("click", (event)=>{
             event.target.closest(".task").remove();
             localStorage.removeItem("tasksList");
-            console.log(document.getElementById("tasks__list").innerHTML);
             localStorage.setItem("tasksList", document.getElementById("tasks__list").innerHTML);
         });
     }
@@ -30,8 +29,7 @@ function removeTask(task){
 }
 
 
-
-function createTask(event=null) {
+function createTask() {
     let task = document.createElement("div");
     task.setAttribute("class", "task");
     task.innerHTML = `
@@ -40,21 +38,18 @@ function createTask(event=null) {
     </div>
     <a href="#" class="task__remove">&times;</a> 
     `;
-    console.log(tasksList)
     tasksList.append(task);
     inputTask.value = '';
     removeTask(task);
 }
 
 createTaskElement = (event) => {
-    if (event.key == "Enter" || event.type == "click"){
-        createTask(event);
+    if (inputTask.value.trim().length > 1){
+        createTask();
         event.stopPropagation();
         event.preventDefault();
     } 
 }
-
-inputTask.addEventListener("keydown", createTaskElement)
 
 btn.addEventListener("click", createTaskElement) 
 

@@ -30,17 +30,18 @@ function changeQuantity(event, number){
     }
 }
 
-function findProductInCard(productId){
+function findProductInCart(productId){
     let products = Array.from(cartProducts.children);
-    let IDproduct = products.filter((element)=> {return element.dataset.id == productId});
-    return (IDproduct[0])
+    let IDproduct = products.find((element) => element.dataset.id == productId);
+    return IDproduct
 }
 
 function removeProductCart(event){
+    console.log(event.target.closest(".cart__product"))
     cartProducts.removeChild(event.target.closest(".cart__product"));
     localStorage.setItem("cartProducts", cartProducts.innerHTML);
     // cart display
-    cart.style.display = (cartProducts.children.count > 0)? "block": "none";
+    cart.style.display = (cartProducts.children.length > 0)? "block": "none";
     event.stopPropagation();
     event.preventDefault();
 }
@@ -51,7 +52,7 @@ function addProductToCart(event){
     // produc creation
     let product = event.target.closest(".product").cloneNode(false);
     product.className = "cart__product";
-    let productOfID = findProductInCard(product.dataset.id)
+    let productOfID = findProductInCart(product.dataset.id)
     let count = event.target.parentElement.querySelector(".product__quantity-value");
     // if product isn't in cart
     if ( productOfID == undefined){
@@ -81,7 +82,6 @@ function addProductToCart(event){
     }
     count.innerText = '1';
     localStorage.setItem("cartProducts", cartProducts.innerHTML);
-    // console.log(product);
 }
 
 

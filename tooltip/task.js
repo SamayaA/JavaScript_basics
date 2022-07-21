@@ -4,12 +4,8 @@ const aWithTooltip = Array.from(document.querySelectorAll(".has-tooltip"))
 function createTooltip(event){
     let tooltip = document.createElement("div");
     tooltip.setAttribute("class", "tooltip tooltip_active");
-    // data-position
-    tooltip.setAttribute("data-position", "absolute");
-    tooltip.setAttribute("data-top", `${event.clientY}px`);
-    tooltip.setAttribute("data-left", `${event.clientX}px`);
     // position css
-    tooltip.style.top = `${event.clientY}px`;
+    tooltip.style.top = `${event.target.style.fontSize}px`;
     tooltip.style.left = `${event.clientX}px`;
     tooltip.style.position = "absolute";
     tooltip.innerText = event.target.title;
