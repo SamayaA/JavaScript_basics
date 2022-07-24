@@ -37,6 +37,8 @@ Base projects that helps to learn JS
 	You can add tasks by pressing "Enter" key in input or by clicking on button. Delete task by clicking on X.  
 24. [Add products to shoping cart](https://github.com/SamayaA/JavaScript_basics/blob/master/cart/).  
 25. [Show the preloader while getting the currency information](https://github.com/SamayaA/JavaScript_basics/blob/master/preloader/).  
-26. [Show random poll (Get request) and display statistics information on it](https://github.com/SamayaA/JavaScript_basics/blob/master/poll/).
+26. [Show random poll (Get request) and display statistics information on it](https://github.com/SamayaA/JavaScript_basics/blob/master/poll/).  
+27. [Progressbar while file is uploading](https://github.com/SamayaA/JavaScript_basics/blob/master/progressbar/).  
+
 
 
