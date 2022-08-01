@@ -39,6 +39,8 @@ Base projects that helps to learn JS
 25. [Show the preloader while getting the currency information](https://github.com/SamayaA/JavaScript_basics/blob/master/preloader/).  
 26. [Show random poll (Get request) and display statistics information on it](https://github.com/SamayaA/JavaScript_basics/blob/master/poll/).  
 27. [Progressbar while file is uploading](https://github.com/SamayaA/JavaScript_basics/blob/master/progressbar/).  
+28. [Text editor](https://github.com/SamayaA/JavaScript_basics/blob/master/text-editor/).  
+	Save text in textarea even after refresh of page.
 
 
 

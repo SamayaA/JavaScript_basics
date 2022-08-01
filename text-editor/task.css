@@ -1,0 +1,28 @@
+textarea {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    font-family: Golos, Arial, sans-serif;
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+  }
+
+  #clear-editor {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #4d68f2;
+    border-radius: 5px;
+    background-color: #4d68f2;
+    color: #f9faff;
+    font-size: 1em;
+  }
+
+  #clear-editor:focus{
+    cursor: pointer;
+  }
