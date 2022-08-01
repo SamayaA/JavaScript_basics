@@ -42,6 +42,9 @@ Base projects that helps to learn JS
 28. [Text editor](https://github.com/SamayaA/JavaScript_basics/blob/master/text-editor/).  
 	Save text in textarea even after refresh of page.  
 29. [PopUp subscribe. Display only once (use cookie)](https://github.com/SamayaA/JavaScript_basics/blob/master/popup/).  
+30. [Authantication](https://github.com/SamayaA/JavaScript_basics/blob/master/auth/).  
+	If user is authenticated display greeting with user id otherwise display signin form.  
+
 
 
 
