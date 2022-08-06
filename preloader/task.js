@@ -5,17 +5,20 @@ const items = document.getElementById("items");
 function createItemCurrency (code, value){
     let item = document.createElement("div");
     item.className = "item";
-    item.innerHTML = `
-    <div class="item__code">
-        ${code}
-    </div>
-    <div class="item__value">
-        ${value}
-    </div>
-    <div class="item__currency">
-        руб.
-    </div>
-    `;
+
+    let itemCode = document.createElement("div");
+    itemCode.className = "item__code";
+    itemCode.textContent = code;
+
+    let itemValue = document.createElement("div");
+    itemValue.className = "item__value";
+    itemValue.textContent = value;
+    
+    let itemCurrency = document.createElement("div");
+    itemValue.className = "item__currency";
+    itemValue.textContent = 'руб.';
+    item.append(itemCode, itemValue, itemCurrency);
+
     items.append(item);
 }
 
@@ -27,7 +30,7 @@ function hideLoader(){
 
 const currencies = new XMLHttpRequest();
 currencies.addEventListener("readystatechange", () =>{
-    if (currencies.readyState == currencies.DONE){
+    if (currencies.readyState == currencies.DONE && currencies.status == 200){
         let valutes = JSON.parse(currencies.response).response["Valute"];
         hideLoader();
         Object.values(valutes).forEach((element) => {

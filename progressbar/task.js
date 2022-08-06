@@ -1,19 +1,16 @@
 const progress = document.getElementById( "progress" );
 
-const submitBtn = document.getElementById( "send" );
-
-submitBtn.addEventListener("click", (event)=>{
+document.forms.form.addEventListener("submit", (event)=>{
     let fileUpload = new XMLHttpRequest();
     let formData = new FormData();           
     formData.append("file", file.files[0]);
-    fileUpload.addEventListener("progress", (event) => {
-        // progress.value = event.loaded / event.total;
-        progress.value = event.loaded / file.files[0].size;
+    fileUpload.upload.addEventListener("progress", (event) => {
+        progress.value = (event.total !== 0)? event.loaded / event.total: 0;
     })
      
-    fileUpload.open("POST", "https://netology-slow-rest.herokuapp.com/upload.php");   
+    fileUpload.open("POST", event.target.action);   
     fileUpload.send(formData);
-    event.preventDefault()
+    event.preventDefault();
     event.stopPropagation();
 }
 )
